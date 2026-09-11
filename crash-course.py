@@ -83,6 +83,19 @@ print(end + "\n")
 
 print(math.sqrt(14))
 
+#Coniditionals 
+
+#if elif else 
+
+t = True 
+f = False 
+
+if t: 
+    print("Reached the first condition")
+else: 
+  print("Reached else")
+  
+
 print(math.ceil(3.65))
 print(math.floor(8.94))
 print(math.pow(2, 4)) 
