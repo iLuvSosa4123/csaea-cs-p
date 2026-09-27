@@ -101,3 +101,54 @@ groceries.append("rice")
 print(groceries)
 print(len(groceries))
 
+# 11. Rocket Launch
+# Use a for loop to count down from start to 1, then print "Liftoff!". Use a for loop with range(start, stop, step).
+# Given:
+start = 10
+for count in range(start, 0 ,-1):
+    print(count)    
+print("liftoff!")
+
+# 12. Times Table Helper
+# A younger student needs help with a times table. Use a for loop to print number x 1 through number x 10. Use a for loop with range(start, stop) and an f-string.
+# Given:
+number = 7
+for multiplier in range(1, 11):
+    print(f"{number} * {multiplier} = {number * multiplier}")
+# 13. Savings Goal
+# You save the same amount every week toward headphones. Use a while loop to find how many weeks it takes to reach the goal, then print the weeks and your final savings. Use a while loop.
+# Given:
+savings = 0
+weekly_deposit = 15
+goal = 100
+weeks = 0
+while savings < goal:
+    savings += weekly_deposit   
+    weeks += 1  
+print(f"{weeks} weeks to reach the goal with a total of ${savings} deposited")
+
+# 14. High Score
+# Using a loop and an if statement (no max() allowed), find and print the highest score. Use a for loop, comparisons, and conditionals.
+scores = [340, 1250, 980, 1510, 720]
+highest_score = scores[0]
+
+for score in scores:
+    if score > highest_score:
+        highest_score = score
+
+print(f"The highest score is {highest_score}")
+
+# 15. Class Pass Rate
+# Count how many students passed (a grade at or above passing) and print the count out of the class size. Use a for loop, comparisons, and conditionals.
+# Given:
+grades = [88, 65, 72, 91, 54, 70]
+passing = 70
+passed_count = 0
+failed_count = 0
+for grade in grades:
+    if grade >= passing:
+        passed_count += 1
+    elif grade < passing:
+        failed_count += 1
+
+print(f"The amount of people passing is {passed_count} while the amount of people failing is {failed_count}")
