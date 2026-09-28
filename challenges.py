@@ -152,3 +152,61 @@ for grade in grades:
         failed_count += 1
 
 print(f"The amount of people passing is {passed_count} while the amount of people failing is {failed_count}")
+
+# 16. Garden Fence
+# A square garden has the area below, in square feet. Use the math library to find the length of one side, then print how many feet of fencing go around it. Use the math library.
+# # Given:
+import math
+area = 49
+side = math.sqrt(area)
+perimeter = side * 4
+print(f"The perimeter is {perimeter}ft whilst one side is {side}ft")
+
+# 17. Parking Meter
+# Parking is charged in blocks of time, and any started block counts as a full block. Print how much this driver owes. Use the math library and math operators.
+# Given:
+import math
+minutes_parked = 50
+block_length = 15
+cost_per_block = 1
+blocks_used = math.ceil(50/15)
+driver_owes = blocks_used * cost_per_block 
+print(f"The driver owes ${driver_owes}")
+
+# 18. Playlist Swap
+# A DJ wants the first and last songs to trade places. Swap them using indexes and print the new playlist. Your code should still work if songs are added to the middle. Use lists and indexes (including negative indexes).
+# Given:
+playlist = ["Intro", "Song A", "Song B", "Finale"]
+playlist[0], playlist[-1] = playlist[-1], playlist[0]
+print(playlist)
+
+# 19. Leap Year Checker
+# A year is a leap year if it is divisible by 4, except years divisible by 100 are not, unless they are also divisible by 400. Print whether the year is a leap year. Also test 2024 and 2000. Use the % math operator, logical operators, and conditionals.
+# Given:
+year = 1900
+years_to_test = [2026, 2000, 2024, 1900]
+for year in years_to_test:
+    if year % 400 == 0:
+        print(f"{year} is a leap year")
+    elif year % 100 == 0:
+        print(f"{year} is not leap year") 
+    elif year % 4 == 0:
+        print(f"{year} is a leap year") 
+    else:
+        print(f"{year} is not leap year")
+
+# 20. Speed Trap
+# Drivers 1 to 10 mph over the limit get a warning, 11 to 20 over pay $100, and more than 20 over pay $250. Print the result for this driver. Use math operators and conditionals (if, elif, else).
+speed_limit = 55
+speed = 71
+mph_over = speed - speed_limit
+if mph_over > 20:
+    print("warning!")
+elif mph_over > 11:
+    print("$100 fine")
+elif mph_over > 1:
+    print("Warning!")
+else:
+    print("Safe driving!")
+    
+
