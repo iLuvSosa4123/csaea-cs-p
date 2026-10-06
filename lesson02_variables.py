@@ -58,9 +58,11 @@ print(count)
 # Use a temporary variable.  
 # Hint: You will need to create one new variable. 
 
-num  = 4 
+x = 4
 y = "hello"
-x = "hello"
-y = 4 
 
-print(f{num},{y},{x})
+temp = x 
+x = y 
+y = temp
+
+print(y)
