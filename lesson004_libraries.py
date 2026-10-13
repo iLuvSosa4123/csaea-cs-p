@@ -36,7 +36,7 @@ print(f"The area of the circle is {area}")
 # Perform at least 3 different math calculations on it (ie, addition, subtraction, and division). 
 # Use math library to round the float UP to an integer. 
 # BONUS CHALLENGE: Make your random number output between 1 and 10. 
-
+import math
 seed = 904.2
 seed2 = math.pow(seed, 1)
 print(seed2)
