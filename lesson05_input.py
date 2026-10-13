@@ -27,11 +27,13 @@ print(f"Wow {fav_color} is super cool")
 # Challenge 2: Adding Two Numbers 
 # Ask the user for two numbers, add them together, and print the results.
 num1 = int(input("Insert a number"))
-num2 = int(input("Insert another number))
+num2 = int(input("Insert another number"))
 sum = num1 + num2
-print(f"The sum to those two numbers is {sum})
-      
-diameter = int(input("what is the diameter"))
-radius = dia/2
-pi = math.pi
-print(f"The area is {diameter}")
+print(f"The sum of the two number is {sum}")
+#Challenge 3 
+print()      
+diameter = int(input("Enter a random number for a diameter of a circle"))
+radius = diameter/2
+pi = 3.14
+print(f"The area of the circle is { pi * radius ** 2 }")
+
